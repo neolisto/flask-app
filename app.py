@@ -6,7 +6,7 @@ import logging
 app = Flask(__name__)
 
 logger = logging.getLogger('werkzeug')           # grabs underlying WSGI logger
-handler = logging.FileHandler('logs/test.log')        # creates handler for the log file
+handler = logging.FileHandler('data/data.txt')        # creates handler for the log file
 logger.addHandler(handler)                       # adds handler to the werkzeug WSGI logger
 
 # list of cat images
